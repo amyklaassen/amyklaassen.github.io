@@ -1,0 +1,203 @@
+:root {
+    
+    --black: rgb(14, 14, 14, 1);
+    --white: rgb(244, 244, 244, 1);
+
+    --kersenrood: rgba(99, 25, 24, 1);
+    --huidrose: rgb(189, 121, 89, 1);
+    --vosbruin: rgba(137, 76, 41, 1);
+    --zachtezon: rgba(231, 177, 95, 1);
+    --zandwit: rgba(247, 231, 204, 1);
+    --bloemwit: rgba(252, 246, 237, 1);
+    --porceleinwit: rgba(254, 251, 246, 1);
+    --stoffigeolijf: rgb(112, 127, 105, 1);
+    --spargroen: rgba(52, 70, 32, 1);
+    --nachtblauw: rgb(26, 30, 42, 1);
+    
+    /* oude kleuren
+    --wetclay: rgba(137, 76, 41, 1);
+    --pollendust: rgba(224, 168, 90, 1);
+    --drypottery: rgba(247, 231, 204, 1);
+    --sageolive: rgba(181, 174, 125, 1);
+    --pineneedles: rgba(52,70,32,1);
+    --desertaloe: rgba(201,205,189, 1);
+
+    --color-a: rgb(99, 25, 24, 1);
+    --color-b: rgb(107, 47, 15, 1);
+    --color-c:rgb(156, 104, 46, 1);
+    --color-d:rgb(189, 121, 89, 1); 
+    --color-e:rgb(112, 127, 105, 1);
+    --color-f:rgb(26, 30, 42, 1);
+    --color-g:rgb(255, 210, 127, 1);
+    --color-h:rgba(251, 241, 218, 0.97);
+*/ 
+
+    --bg-over: var(--bloemwit);
+    --bg-contact: var(--bloemwit);
+    --bg-coaching: var(--bloemwit);
+    --bg-home: var(--zandwit);
+    --bg-boeken: var(--zandwit);
+    --bg-sectie-boeken: rgba(231, 177, 95, 0.2);
+    --bg-visuelewerken: var(--bloemwit);
+
+    --menu-home: var(--vosbruin);
+    --menu-over: var(--vosbruin);
+    --menu-coaching: var(--vosbruin);
+    --menu-contact: var(--vosbruin);
+    --menu-boeken: var(--vosbruin);
+    --menu-visuelewerken: var(--vosbruin);
+
+    --menu-hover-home: var(--zachtezon);
+    --menu-hover-over: var(--zachtezon);
+    --menu-hover-coaching: var(--zachtezon);
+    --menu-hover-contact: var(--zachtezon);
+    --menu-hover-boeken: var(--zachtezon);
+    --menu-hover-visuelewerken: var(--zachtezon);
+
+    --logo-laadscherm: var(--zachtezon);
+    --bg-laadscherm: var(--zandwit);
+
+    --textcolor-koppen: var(--vosbruin);
+    --text-colour-over: var(--black);
+    --text-colour-coaching: var(--black);
+    --title-colour-visuelewerken: var(--vosbruin);
+    --text-colour-visuelewerken: var(--black);
+    --text-colour-visuelewerken-werken: var(--vosbruin); 
+    --ondertext-colour-visuelewerken-werken: var(--black); /*de ondertekst wordt dan 0.8*/
+    --buttoncolor: var(--zachtezon);
+    --buttontextcolor: var(--white);
+
+    --lightbox-textcolor: var(--white);
+    --lightbox-bg-color: var(--black);
+    --borderlightbox-thumbs: var(--white);
+    --lightbox-buttons: var(--white);
+    --lightbox-buttons-hover: var(--zachtezon);
+    --lightbox-buttons-tekstsize: 2em;
+    --lightboxtekstgrootte-desc: 0.9em;
+    --lightboxtekstgrootte-title: 1.5em;
+
+    --text-koppen: 'Playfair Display', serif;
+    --text-koppen: 'Merriweather', serif;
+    --text-paragraaf: 'Inter', sans-serif;
+    --textsize-menu: 15px;
+    --textsize-h1: 2rem;
+    --textsize-h2: 1.8rem;
+    --textsize-h3: 1.2rem;
+    --textsize-p2: 1rem;
+    --textsize-p3: 0.9rem;
+    --textsize-p: 0.8rem;
+    --textsize-button: 1.1rem;
+    --text-button: 'Inter', sans-serif;
+    --line-height-ondertitel: 1.6; 
+
+/* oude verwijzingen
+    --textgrootte-hoofdkop: 3rem;
+    --textgrootte-kop1: 2.5rem;
+    --textgrootte-ondertitel:1.3rem;
+    --textgrootte-ondertitel2:1.2rem;
+    --textgrootte-koppen23: 1.7rem;
+    --textgrootte-paragraaf:1rem;
+    --textgrootte-footer: 0.5rem;
+    */ 
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--text-paragraaf);
+}
+
+/* Logo bovenin midden */
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 1000;
+}
+.brand {
+  height: 80px;
+  display: block;
+  mix-blend-mode: difference;
+  filter: drop-shadow(0 1px 9px rgba(14, 14, 14, 0.5));
+}
+
+/* Navigatie algemeen */
+.nav {
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav a, .menu {
+  font-family: var(--text-koppen); 
+  text-decoration: none;
+  font-size: var(--textsize-menu);
+  cursor: pointer;
+  text-shadow: 0 1px 9px rgba(14, 14, 14, 0.6);
+}
+
+/* Posities */
+.top-left { top: 30px; left: 30px; }
+.top-right { top: 30px; right:30px; }
+.bottom-left { bottom: 30px; left: 30px; }
+.bottom-right { bottom: 30px; right: 30px; }
+
+/* Dropdown menu */
+.dropdown {
+  display: none;
+  margin-top: 10px;
+}
+
+.menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown a {
+  display: block;
+  margin: 10px 0;
+}
+
+/*loader*/
+#page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-laadscherm); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease;
+}
+
+#page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-logo svg {
+  width: 300px;
+  height: 300px;
+  color: var(--logo-laadscherm);
+}
+

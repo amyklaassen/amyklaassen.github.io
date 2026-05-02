@@ -1,0 +1,89 @@
+/*menu kleuren*/
+.nav a, .menu {
+  color: var(--menu-over);
+}
+
+.nav a:hover, .menu a:hover{
+  color: var(--menu-hover-over);
+}
+
+.dropdown a:hover{
+  color: var(--menu-hover-over);
+}
+
+/* kleur Logo bovenin midden */
+.brand {
+  color: var(--menu-over);
+}
+
+.brand:hover {
+  color: var(--menu-hover-over);
+}
+
+body.over {
+  background-color: var(--bg-over);
+}
+
+/* Banner */
+.bannercontact img {
+  z-index: 0;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  margin-top: -80px;
+  display: block;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to top, black 50%, transparent 100%);
+  mask-image: linear-gradient(to top black 50%, transparent 100%);
+}
+
+/* Content eronder */
+.content {
+  text-align: center;
+  padding: 150px 20%;
+  max-width: 800px;
+  color: var(--text-colour-over);
+  font-family: var(--text-paragraaf);
+}
+
+
+.content h1{
+    font-family: var(--text-koppen);
+    font-size: var(--textsize-h1);
+    color: var(--textcolor-koppen);
+    margin-bottom: 10px;
+}
+
+.content p{
+    color: var(--text-colour-over);
+    font-family: var(--text-paragraaf);
+    font-size: var(--textsize-p2);
+    line-height: var(--line-height-ondertitel);
+    margin-bottom: 0px;
+}
+
+.linkjes {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+}
+
+.button {
+  text-align: center;
+  margin: 0 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid var(--buttoncolor);
+  color: var(--buttoncolor);
+  text-decoration: none;
+  font-size: var(--textsize-button);
+  font-family: var(--text-button);
+  margin-bottom: -40px;
+  cursor: pointer;
+}
+
+.emaillink {
+  cursor: pointer;
+  color: var(--buttoncolor);
+}

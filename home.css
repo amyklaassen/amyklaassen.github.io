@@ -1,0 +1,40 @@
+/*menu kleuren en hovers*/
+.nav a, .menu {
+  color: var(--menu-home);
+}
+
+.nav a:hover, .menu a:hover{
+  color: var(--menu-hover-home);
+}
+
+.dropdown a:hover{
+  color: var(--menu-hover-home);
+}
+
+/*logo hoofdmenu*/
+.logo-left-home {
+  position: absolute;
+  left: 10%;        
+  top: 50%;          
+  transform: translateY(-50%); 
+}
+
+.brand-home {
+  height: 120px;
+  display: block;
+  mix-blend-mode: difference;
+  color: var(--menu-home);
+}
+
+.brand-home:hover {
+  color: var(--menu-hover-home);
+}
+
+/*achtergrond kleur en foto hoofdpagina*/
+body.home-bg {
+  background-color: var(--bg-home);
+  background-image: url('images/home-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
