@@ -21,3 +21,17 @@
       }
     });
   });
+
+
+// zorgt dat rechtermuisknop kopieren van fotos niet meer kan en slepen ook niet
+document.addEventListener("contextmenu", function (event) {
+    if (event.target.tagName === "IMG") {
+        event.preventDefault();
+    }
+});
+
+document.addEventListener("dragstart", function (event) {
+    if (event.target.tagName === "IMG") {
+        event.preventDefault();
+    }
+});
