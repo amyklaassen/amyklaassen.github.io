@@ -1,6 +1,25 @@
 User-agent: *
-
 Allow: /
 
-# AI-training / content-signalen
+# OpenAI - AI training/model development
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic - model development
+User-agent: ClaudeBot
+Disallow: /
+
+# Google - Gemini training
+User-agent: Google-Extended
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# Extra AI-signaal
 Content-Signal: search=yes, ai-input=no, ai-train=no
