@@ -1,0 +1,115 @@
+/*menu kleuren*/
+.nav a, .menu {
+  color: var(--menu-over);
+}
+
+.nav a:hover, .menu a:hover{
+  color: var(--menu-hover-over);
+}
+
+.dropdown a:hover{
+  color: var(--menu-hover-over);
+}
+
+/* kleur Logo bovenin midden */
+.brand {
+  color: var(--menu-over);
+}
+
+.brand:hover {
+  color: var(--menu-hover-over);
+}
+
+body.over {
+  background-color: var(--bg-over);
+}
+
+/* Banner */
+.banner img {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+/* Content eronder */
+.content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 90px;
+  max-width: 800px;
+  color: var(--text-colour-over);
+  font-family: var(--text-paragraaf);
+}
+
+.content h1{
+    font-family: var(--text-koppen);
+    font-size: var(--textsize-h1);
+    color: var(--textcolor-koppen);
+    margin-bottom: 10px;
+}
+
+.content p{
+    color: var(--text-colour-over);
+    font-family: var(--text-paragraaf);
+    font-size: var(--textsize-p3);
+    line-height: var(--line-height-ondertitel);
+    margin-bottom: 10px;
+}
+
+
+/* GALLERY GRID */
+.kunst-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 20px;
+  justify-content: center;
+}
+
+.kunst-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* afbeelding */
+.kunst-item img {
+  aspect-ratio: 4 / 3;
+  border-radius: 2px;
+  object-fit: cover; /* snijdt netjes bij */
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* hover zoom */
+.kunst-item:hover img {
+  transform: scale(1.05);
+}
+
+.kunst-overlay {
+  position: static;   
+  opacity: 1;         
+  background: none;   
+  padding: 10px 5px 0;
+}
+
+.kunst-overlay h3{
+  font-size: var(--textsize-h3);
+  font-family: var(--text-koppen);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  color: var(--text-colour-visuelewerken-werken);
+}
+.kunst-overlay p{
+  font-size: var(--textsize-p);
+  font-family: var(--text-paragraaf);
+  text-align: center;
+  margin-top: 5px;
+  opacity: 0.8;
+  color: var(--ondertext-colour-visuelewerken-werken);
+}
